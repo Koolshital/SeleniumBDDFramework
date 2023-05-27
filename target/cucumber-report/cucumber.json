@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 14848932600,
+              "duration": 7082279300,
               "status": "passed"
             },
             "match": {
@@ -14,19 +14,30 @@
             }
           }
         ],
-        "line": 6,
-        "name": "Validating Registration after adding mandatory fields",
+        "line": 48,
+        "name": "Registration with data table with outline",
         "description": "",
-        "id": "registration-feature;validating-registration-after-adding-mandatory-fields",
+        "id": "registration-feature;registration-with-data-table-with-outline;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1180485300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 672602000,
+              "duration": 135284400,
               "status": "passed"
             },
-            "line": 7,
+            "line": 34,
             "name": "I am on Homepage",
             "match": {
               "location": "HomeSteps.i_am_on_Homepage()"
@@ -35,93 +46,724 @@
           },
           {
             "result": {
-              "duration": 1392929200,
+              "duration": 1020773900,
               "status": "passed"
             },
-            "line": 8,
+            "line": 35,
             "name": "I click on Register button on homepage",
             "match": {
-              "location": "RegSteps2.iClickOnRegisterButtonOnHomepage()"
+              "location": "RegistrationSteps.iClickOnRegisterButtonOnHomepage()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 684461600,
+              "duration": 1117868900,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I enter Firstname and Lastname",
+            "line": 36,
+            "name": "I enter following details for registration",
             "match": {
-              "location": "RegSteps2.iEnterFirstnameAndLastname()"
+              "location": "RegistrationSteps.i_enter_following_details_for_registration(DataTable)"
             },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "email",
+                  "password",
+                  "confirmPassword"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "Shital",
+                  "Dalal",
+                  "st@hotmail.com",
+                  "123456",
+                  "123456"
+                ],
+                "line": 38
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 349642000,
+              "duration": 736425500,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I enter valid Email",
-            "match": {
-              "location": "RegSteps2.iEnterValidEmail()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 567575300,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I enter password and confirm password",
-            "match": {
-              "location": "RegSteps2.iEnterPasswordAndConfirmPassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 874194600,
-              "status": "passed"
-            },
-            "line": 12,
+            "comments": [
+              {
+                "line": 39,
+                "value": "#  And I enter first name \"Shital\" and last name \"Dalal\""
+              },
+              {
+                "line": 40,
+                "value": "#    And I enter valid email \"shital@yahoo.com\""
+              },
+              {
+                "line": 41,
+                "value": "#    And I enter password \"123456\" and confirm password \"123456\""
+              }
+            ],
+            "line": 42,
             "name": "I click on Register button",
             "match": {
-              "location": "RegSteps2.iClickOnRegisterButton()"
+              "location": "RegistrationSteps.iClickOnRegisterButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 212533500,
+              "duration": 88146100,
               "status": "passed"
             },
-            "line": 13,
+            "line": 43,
             "name": "I should see Your Registration completed",
             "match": {
-              "location": "RegSteps2.iShouldSeeRegistrationCompleted()"
+              "location": "RegistrationSteps.iShouldSeeRegistrationCompleted()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 83187800,
+              "duration": 89406600,
               "status": "passed"
             },
-            "line": 14,
+            "line": 44,
             "name": "I should see continue button",
             "match": {
-              "location": "RegSteps2.iShouldSeeContinueButton()"
+              "location": "RegistrationSteps.iShouldSeeContinueButton()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 5,
-            "name": "@RegTest"
+            "line": 32,
+            "name": "@test24"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5443571900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "Registration with data table with outline",
+        "description": "",
+        "id": "registration-feature;registration-with-data-table-with-outline;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1019554500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7803200,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I am on Homepage",
+            "match": {
+              "location": "HomeSteps.i_am_on_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1159948900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click on Register button on homepage",
+            "match": {
+              "location": "RegistrationSteps.iClickOnRegisterButtonOnHomepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 981000700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I enter following details for registration",
+            "match": {
+              "location": "RegistrationSteps.i_enter_following_details_for_registration(DataTable)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "email",
+                  "password",
+                  "confirmPassword"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "Shital",
+                  "Dalal",
+                  "st@hotmail.com",
+                  "123456",
+                  "123456"
+                ],
+                "line": 38
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 632848400,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 39,
+                "value": "#  And I enter first name \"Shital\" and last name \"Dalal\""
+              },
+              {
+                "line": 40,
+                "value": "#    And I enter valid email \"shital@yahoo.com\""
+              },
+              {
+                "line": 41,
+                "value": "#    And I enter password \"123456\" and confirm password \"123456\""
+              }
+            ],
+            "line": 42,
+            "name": "I click on Register button",
+            "match": {
+              "location": "RegistrationSteps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150962300,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I should see Your Registration completed",
+            "match": {
+              "location": "RegistrationSteps.iShouldSeeRegistrationCompleted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 79820100,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I should see continue button",
+            "match": {
+              "location": "RegistrationSteps.iShouldSeeContinueButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@test24"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4784806800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 50,
+        "name": "Registration with data table with outline",
+        "description": "",
+        "id": "registration-feature;registration-with-data-table-with-outline;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 989377700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12525400,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I am on Homepage",
+            "match": {
+              "location": "HomeSteps.i_am_on_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 953085400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click on Register button on homepage",
+            "match": {
+              "location": "RegistrationSteps.iClickOnRegisterButtonOnHomepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1011984000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I enter following details for registration",
+            "match": {
+              "location": "RegistrationSteps.i_enter_following_details_for_registration(DataTable)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "email",
+                  "password",
+                  "confirmPassword"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "Shital",
+                  "Dalal",
+                  "st@hotmail.com",
+                  "123456",
+                  "123456"
+                ],
+                "line": 38
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 729322200,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 39,
+                "value": "#  And I enter first name \"Shital\" and last name \"Dalal\""
+              },
+              {
+                "line": 40,
+                "value": "#    And I enter valid email \"shital@yahoo.com\""
+              },
+              {
+                "line": 41,
+                "value": "#    And I enter password \"123456\" and confirm password \"123456\""
+              }
+            ],
+            "line": 42,
+            "name": "I click on Register button",
+            "match": {
+              "location": "RegistrationSteps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52106100,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I should see Your Registration completed",
+            "match": {
+              "location": "RegistrationSteps.iShouldSeeRegistrationCompleted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 66076100,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I should see continue button",
+            "match": {
+              "location": "RegistrationSteps.iShouldSeeContinueButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@test24"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4796744100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 51,
+        "name": "Registration with data table with outline",
+        "description": "",
+        "id": "registration-feature;registration-with-data-table-with-outline;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1029742400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10411100,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I am on Homepage",
+            "match": {
+              "location": "HomeSteps.i_am_on_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1041805800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click on Register button on homepage",
+            "match": {
+              "location": "RegistrationSteps.iClickOnRegisterButtonOnHomepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 989697700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I enter following details for registration",
+            "match": {
+              "location": "RegistrationSteps.i_enter_following_details_for_registration(DataTable)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "email",
+                  "password",
+                  "confirmPassword"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "Shital",
+                  "Dalal",
+                  "st@hotmail.com",
+                  "123456",
+                  "123456"
+                ],
+                "line": 38
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 658725700,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 39,
+                "value": "#  And I enter first name \"Shital\" and last name \"Dalal\""
+              },
+              {
+                "line": 40,
+                "value": "#    And I enter valid email \"shital@yahoo.com\""
+              },
+              {
+                "line": 41,
+                "value": "#    And I enter password \"123456\" and confirm password \"123456\""
+              }
+            ],
+            "line": 42,
+            "name": "I click on Register button",
+            "match": {
+              "location": "RegistrationSteps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68682500,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I should see Your Registration completed",
+            "match": {
+              "location": "RegistrationSteps.iShouldSeeRegistrationCompleted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 82158600,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I should see continue button",
+            "match": {
+              "location": "RegistrationSteps.iShouldSeeContinueButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@test24"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5632530300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 52,
+        "name": "Registration with data table with outline",
+        "description": "",
+        "id": "registration-feature;registration-with-data-table-with-outline;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 1138060200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12258500,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I am on Homepage",
+            "match": {
+              "location": "HomeSteps.i_am_on_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1307300100,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click on Register button on homepage",
+            "match": {
+              "location": "RegistrationSteps.iClickOnRegisterButtonOnHomepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 907399400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I enter following details for registration",
+            "match": {
+              "location": "RegistrationSteps.i_enter_following_details_for_registration(DataTable)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "email",
+                  "password",
+                  "confirmPassword"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "Shital",
+                  "Dalal",
+                  "st@hotmail.com",
+                  "123456",
+                  "123456"
+                ],
+                "line": 38
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700516300,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 39,
+                "value": "#  And I enter first name \"Shital\" and last name \"Dalal\""
+              },
+              {
+                "line": 40,
+                "value": "#    And I enter valid email \"shital@yahoo.com\""
+              },
+              {
+                "line": 41,
+                "value": "#    And I enter password \"123456\" and confirm password \"123456\""
+              }
+            ],
+            "line": 42,
+            "name": "I click on Register button",
+            "match": {
+              "location": "RegistrationSteps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68888500,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I should see Your Registration completed",
+            "match": {
+              "location": "RegistrationSteps.iShouldSeeRegistrationCompleted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59392600,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I should see continue button",
+            "match": {
+              "location": "RegistrationSteps.iShouldSeeContinueButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@test24"
           }
         ]
       }
