@@ -11,6 +11,7 @@ Feature: Login feature
    When I click on Login button on homepage
    Then I should see "Welcome, Please Sign In!" text
    And the URL should contain "/login"
+
 @Test2
  Scenario: Login with valid credentials
     Given I am on Homepage
@@ -19,6 +20,8 @@ Feature: Login feature
     And I click on Login button on login page
     Then I should see log out button
     And I should see My Account button
+
+  
   Scenario: Login with invalid credentials
     Given I am on Homepage
     And I click on Login button on homepage

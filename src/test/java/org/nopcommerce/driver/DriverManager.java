@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,11 +24,16 @@ public class DriverManager {//this is the utility ,we will keep reusable methods
         //this is predefined class and method
     }
 
-    public void openLocalBrowser() throws IllegalAccessException {//using conditional statement to open in diff browsers
+
+
+    public void openHeadlessBrowser() throws IllegalAccessException {//using conditional statement to open in diff browsers
         switch (browser){
             case "chrome":
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.setHeadless(true);
+                chromeOptions.addArguments("--window-size=1920,1080");
+                driver = new ChromeDriver(chromeOptions);
                 break;
 //            case "edge":
 //                WebDriverManager.edgedriver().setup();
@@ -37,7 +43,7 @@ public class DriverManager {//this is the utility ,we will keep reusable methods
 //                WebDriverManager.operadriver().setup();
 //                driver = new OperaDriver();
 //                break;
-                default:
+            default:
                 throw new IllegalAccessException("unexpected browser");//to make sure to open mentioned browser
 
         }

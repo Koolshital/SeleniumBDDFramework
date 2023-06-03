@@ -4,7 +4,7 @@ Feature: Registration feature
   so  that customer can use it
 
 
-  @Test1
+  @Test22
   Scenario:  Registration with multiple details
     Given I am on Homepage
     When I click on Register button on homepage
@@ -54,7 +54,7 @@ Feature: Registration feature
 
 
 
-  @Test1
+  @Test25
   Scenario Outline: Registration with multiple details
     Given I am on Homepage
     When I click on Register button on homepage
