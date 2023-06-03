@@ -1,3 +1,4 @@
+@Test
 Feature: Registration feature
   As a user
   I want add registration functionality
