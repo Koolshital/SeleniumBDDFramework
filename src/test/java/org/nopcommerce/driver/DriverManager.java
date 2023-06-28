@@ -22,6 +22,12 @@ public class DriverManager {//this is the utility ,we will keep reusable methods
     public DriverManager(){//intialising constructor ??
         PageFactory.initElements(driver,this);//calling object(driver) in this class\page
         //this is predefined class and method
+        //we are using @Findby for loacators which are coming from Pagefactory class
+    }
+    public void openLocalBrowser(){
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+
     }
 
 
