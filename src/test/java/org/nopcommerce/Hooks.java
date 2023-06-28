@@ -10,15 +10,15 @@ public class Hooks  {//This class for setup and teardown methods, where we call 
     //So object will initialise Drivermanager constructor and it will intialise driver so thru the object we can use all the methods
    @Before
     public void setup() throws IllegalAccessException {
-       // driverManager.openLocalBrowser();
-       driverManager.openHeadlessBrowser();
+       driverManager.openLocalBrowser();
+      // driverManager.openHeadlessBrowser();
         driverManager.maximiseBrowser();
         driverManager.openURL();
         driverManager.applyImplicitWait();
 
 
     }
-    @After
+   // @After
     public void tearDown(Scenario scenario){
         if(scenario.isFailed()){
             driverManager.takeScreenshot(scenario);
